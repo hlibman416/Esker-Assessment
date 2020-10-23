@@ -1,5 +1,0 @@
-This is a sample file.
-This line contains a bunch of words like dog, cat, banana and orange.
-This line contains a bunch of numbers like 1, 2, 779 and 100000.
-This line contains a bunch of random characters like !, #, ., and .?))\~
-Good luck figuring it all out!
