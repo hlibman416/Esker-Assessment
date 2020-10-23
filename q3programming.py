@@ -1,7 +1,14 @@
+'''
+File name: q3programming.py
+Author: Henry Libman
+Date: 10/22/2020
+Python Version: 3.8.5
+'''
+
 import re
 
 # Open the file to read from
-file = open('./sample.txt', 'rt')
+file = open('./output.txt', 'rt')
 # Read from file
 file_contents = file.read()
 
