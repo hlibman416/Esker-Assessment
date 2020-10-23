@@ -2,8 +2,8 @@ The code took about 2-3 hours in total to write, test, and comment completely.
 
 The output of the program should be the following
 (Note: the newline chracter '\n' is counted in the total character count and other characters count)
-(Note: numbers and words are both counted in total word count, strings of just punctuation are not)
-(Note: numbers and words are both counted in number of x letter word counts, punctuation was not counted in word length)
+(Note: numbers and words are both counted in total word count, strings of only punctuation are not)
+(Note: numbers and words are both counted in number of 'x' letter word counts, punctuation was not counted in word length)
 
 File name: ./sample.txt
 Number of lines: 5
