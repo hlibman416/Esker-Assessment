@@ -1,7 +1,7 @@
 import re
 
 # Open the file to read from
-file = open('sample.txt', 'rt')
+file = open('./sample.txt', 'rt')
 # Read from file
 file_contents = file.read()
 
@@ -15,6 +15,17 @@ num_other = 0
 num_words = 0
 num_lengths = {}
 
+# Iterate through each character in the file
+for char in file_contents:
+    # If the character is a letter, increment the number of letters
+    if char.isalpha():
+        num_letters += 1
+    # If the character is a figure, increment the number of figures
+    elif char.isdigit():
+        num_figures += 1
+    # If the character is something else, incrememnt the number of other characters
+    else:
+        num_other += 1
 
 # Break file into a list of lines
 lines = file_contents.split("\n")
@@ -28,29 +39,18 @@ for line in lines:
     words  = line.split(" ")
     # Iterate through each word in the line
     for word in words:
+        # Remove punctuation from each word
+        word = re.sub(r"[^\w\s]", "", word)
         # Increment the number of words
         if word:
             num_words += 1
-        # Remove punctuation from each word
-        word = re.sub(r"[^\w\s]", "", word)
         # Check if a word of that length is not in the dictionary already
-        if not len(word) in num_lengths and word.isalpha():
+        if not len(word) in num_lengths and word.isalnum():
             # Add the length of word to the dictionary with a count of 1
             num_lengths[len(word)] = 1
-        elif word.isalpha():
+        elif word.isalnum():
             # Increment count of that length of word by 1
             num_lengths[len(word)] += 1
-    # Iterate through each character in the line
-    for char in line:
-        # If the character is a letter, increment the number of letters
-        if char.isalpha():
-            num_letters += 1
-        # If the character is a figure, increment the number of figures
-        elif char.isdigit():
-            num_figures += 1
-        # If the character is something else, incrememnt the number of other characters
-        else:
-            num_other += 1
 
 # Print out all the totals
 print("File name: " + file_name)

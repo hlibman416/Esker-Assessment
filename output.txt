@@ -1,0 +1,23 @@
+The code took about 2-3 hours in total to write, test, and comment completely.
+
+The output of the program should be the following
+(Note: the newline chracter '\n' is counted in the total character count and other characters count)
+(Note: numbers and words are both counted in total word count, strings of just punctuation are not)
+(Note: numbers and words are both counted in number of x letter word counts, punctuation was not counted in word length)
+
+File name: ./sample.txt
+Number of lines: 5
+Number of characters (total): 261
+Number of letters: 180
+Number of figures: 11
+Number of other characters: 70
+Number of words: 47
+Number of 1 letter words: 6
+Number of 2 letter words: 5
+Number of 3 letter words: 8
+Number of 4 letter words: 13
+Number of 5 letter words: 4
+Number of 6 letter words: 5
+Number of 7 letter words: 1
+Number of 8 letter words: 4
+Number of 10 letter words: 1
